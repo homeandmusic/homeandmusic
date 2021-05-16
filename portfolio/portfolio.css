@@ -1,0 +1,109 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 10;
+}
+.container {
+  display: flex;
+  padding: 0 10px;
+}
+
+.header-left {
+  width: 10%;
+  padding: 10px;
+}
+
+.header-center {
+  width: 50%; 
+
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  font-style: italic;
+}
+
+.header-right {
+  width: 40%;
+}
+
+.site-name {
+  margin: 200px 0;
+  text-align: center;
+}
+
+.site-name h1 {
+  font-size: 30px;
+}
+
+@media (min-width: 600px) {
+  header {
+    height: 90px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .header-left {
+    padding: 15px;
+  }
+  
+  .header-left img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .header-center {
+    line-height: 90px;
+    font-size: 36px;
+  }
+
+  .site-name h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    height: 120px;
+  }
+  
+  .header-left {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-left img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .header-center {
+    line-height: 120px;
+    font-size: 60px;
+  }
+
+  .site-name h1 {
+    font-size: 60px;
+  }
+}

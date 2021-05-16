@@ -1,0 +1,200 @@
+* {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  padding: 0 10px;
+}
+
+.header-left {
+  width: 10%;
+  padding: 10px;
+}
+
+
+.header-center {
+  width: 50%; 
+
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 3px;
+  text-align: center;
+  font-style: italic;
+}
+
+.header-right {
+  width: 40%;
+}
+
+main {
+  padding-top: 180px; 
+  text-align: center;
+  background: navajowhite;
+}
+
+main h1 {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-size: 48px;
+  font-style: italic;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+  list-style: none;
+}
+
+main li {
+  margin-bottom: 60px;
+}
+
+.profile {
+  margin: 0 10%;
+  border-bottom: 1px solid chocolate;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 50%;
+  border: 1px solid black;
+  background: white;
+}
+
+.profile h2 {
+  font-size: 32px;
+}
+
+.profile h2 p span {
+  font-style: none;
+}
+
+.profile span {
+  color: red;
+  font-size: 24px;
+
+  font-weight: bold;
+}
+
+.btn a {
+  display: inline-block;
+  margin: 30px 0;
+  padding: 10px 40px;
+  background: chocolate;
+
+  border-radius: 4px;
+  box-shadow: 0 7px brown;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.5s;
+}
+
+.btn a:hover {
+  opacity: 0.8;
+}
+
+.btn a:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer {
+  text-align: center;
+  background: whitesmoke;
+}
+
+
+@media (min-width: 600px) {
+  header {
+    height: 90px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .header-left {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .header-left img {
+    height: 60px;
+    width: 60px;
+  }
+  
+  .header-center {
+    line-height: 90px;
+    font-size: 36px;
+  }
+
+  .profile span {
+    color: red;
+    font-size: 36px;
+  
+    font-weight: bold;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    height: 120px;
+  }
+  
+  .header-left {
+    padding: 20px;
+  }
+  
+  .header-left img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .header-center {
+    line-height: 120px;
+    font-size: 60px;
+  }
+
+  .profile {
+    margin: 0 10%;
+  }
+
+  .profile p {
+    font-size: 20px;
+  }
+
+  .profile span {
+    color: red;
+    font-size: 60px;
+  
+    font-weight: bold;
+  }
+}
